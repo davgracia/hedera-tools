@@ -2,6 +2,10 @@
 
 Welcome to the Hedera Tools repository. This project contains a collection of tools and utilities for working with the Hedera Hashgraph platform.
 
+## Author
+
+[David Martínez Gracia](https://www.linkedin.com/in/davgracia/)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
