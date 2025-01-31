@@ -57,6 +57,21 @@ The following table lists the available API endpoints for the Hedera Tools proje
 
 To use the API endpoints, you can send HTTP requests to the specified routes with the required parameters. Below are examples of how to use each endpoint.
 
+### Hedera Networks
+
+Hedera Hashgraph offers different networks for various purposes. Here are the main networks:
+
+#### Mainnet
+The Mainnet is the primary network where real transactions occur. It is a public network used for deploying and running production applications. Transactions on the Mainnet require actual HBAR tokens.
+
+#### Testnet
+The Testnet is a public network used for testing applications. It mirrors the Mainnet's functionality but uses test HBAR tokens, which have no real-world value. Developers use the Testnet to test their applications without incurring costs.
+
+#### Previewnet
+The Previewnet is a public network that provides a preview of upcoming features and updates. It allows developers to test new functionalities before they are released on the Mainnet and Testnet. Like the Testnet, it uses test HBAR tokens.
+
+Each network serves a specific purpose, allowing developers to choose the appropriate environment for development, testing, and production deployment.
+
 ### Create Account
 
 ```bash
