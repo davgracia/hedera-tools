@@ -12,6 +12,7 @@ Welcome to the Hedera Tools repository. This project contains a collection of to
 - [Installation](#installation)
 - [API Endpoints](#api-endpoints)
 - [Usage](#usage)
+    - [Hedera Networks](#hedera-networks)
     - [Create Account](#create-account)
     - [Update Account](#update-account)
     - [Create Token](#create-token)
