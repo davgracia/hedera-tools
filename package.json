@@ -9,7 +9,13 @@
   },
   "author": "David Martínez Gracia",
   "license": "GPL-3.0-or-later",
-  "description": "",
+  "description": "A set of tools for interacting with the Hedera Hashgraph network.",
+  "keywords": [
+    "hedera",
+    "hashgraph",
+    "api",
+    "tools"
+  ],
   "dependencies": {
     "@hashgraph/sdk": "^2.26.0",
     "dotenv": "^16.4.7",
