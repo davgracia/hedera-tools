@@ -5,7 +5,7 @@ const app = express();
 require('dotenv').config();
 
 app.get('/', (req, res) => {
-    res.send('Hello World! This is the Hedera Tools project.');
+    res.send('Hello World! This is the Hedera API project.');
 });
 
 app.use('/api', api);
