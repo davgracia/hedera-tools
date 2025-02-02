@@ -41,12 +41,14 @@ We welcome contributions! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file
 
 The following table lists the main packages used in this project:
 
-| Package           | Version | Description                                      |
-|-------------------|---------|--------------------------------------------------|
-| `@hashgraph/sdk`  | ^2.26.0 | Official Hedera SDK for JavaScript/TypeScript    |
-| `dotenv`          | ^16.4.7 | Loads environment variables from a `.env` file   |
-| `express`         | ^4.21.2 | Web framework for Node.js                        |
-| `nodemon`         | ^3.1.9  | Tool for automatically restarting the server     |
+| Package             | Version | Description                                      |
+|---------------------|---------|--------------------------------------------------|
+| `@hashgraph/sdk`    | ^2.26.0 | Official Hedera SDK for JavaScript/TypeScript    |
+| `dotenv`            | ^16.4.7 | Loads environment variables from a `.env` file   |
+| `express`           | ^4.21.2 | Web framework for Node.js                        |
+| `nodemon`           | ^3.1.9  | Tool for automatically restarting the server     |
+| `express-session`   | ^1.18.1 | Session middleware for Express                   |
+| `express-useragent` | ^1.0.15 | User agent middleware for Express                |
 
 
 ## Running the Project

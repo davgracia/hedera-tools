@@ -21,6 +21,8 @@
     "@hashgraph/sdk": "^2.26.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "express-useragent": "^1.0.15",
     "nodemon": "^3.1.9"
   }
 }
