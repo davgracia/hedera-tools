@@ -8,10 +8,15 @@ David G.
 [davgracia](https://github.com/davgracia)
 [LinkedIn](https://www.linkedin.com/in/davgracia/)
 
+## Contributing
+
+We welcome contributions! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute to this project.
+
 ## Table of Contents
 
 - [Hedera API](#hedera-api)
 - [Author](#author)
+- [Packages](#packages)
 - [Table of Contents](#table-of-contents)
 - [Running the Project](#running-the-project)
 - [API Endpoints](#api-endpoints)
@@ -36,13 +41,13 @@ David G.
 
 The following table lists the main packages used in this project:
 
-| Package       | Version | Description                                      |
-|---------------|---------|--------------------------------------------------|
-| `@hashgraph/sdk` | ^2.0.0 | Official Hedera SDK for JavaScript/TypeScript   |
-| `dotenv`      | ^10.0.0 | Loads environment variables from a `.env` file   |
-| `express`     | ^4.17.1 | Web framework for Node.js                        |
-| `nodemon`     | ^2.0.7  | Tool for automatically restarting the server     |
-| `axios`       | ^0.21.1 | Promise-based HTTP client for the browser and Node.js |
+| Package           | Version | Description                                      |
+|-------------------|---------|--------------------------------------------------|
+| `@hashgraph/sdk`  | ^2.26.0 | Official Hedera SDK for JavaScript/TypeScript    |
+| `dotenv`          | ^16.4.7 | Loads environment variables from a `.env` file   |
+| `express`         | ^4.21.2 | Web framework for Node.js                        |
+| `nodemon`         | ^3.1.9  | Tool for automatically restarting the server     |
+
 
 ## Running the Project
 
