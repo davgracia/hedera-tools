@@ -1,10 +1,12 @@
 # Hedera Tools
 
-Welcome to the Hedera Tools repository. This project contains a collection of tools and utilities for working with the Hedera Hashgraph platform.
+Welcome to the Hedera API repository. This project allows you to set up your own API server to interact with the Hedera network using the official Hedera SDK.
 
 ## Author
 
-[David Martínez Gracia](https://www.linkedin.com/in/davgracia/)
+David G.
+[davgracia](https://github.com/davgracia)
+[LinkedIn](https://www.linkedin.com/in/davgracia/)
 
 ## Table of Contents
 
@@ -25,17 +27,42 @@ Welcome to the Hedera Tools repository. This project contains a collection of to
     - [Delete Token](#delete-token)
 - [License](#license)
 
-## Introduction
+## Running the Project
 
-Hedera Tools is designed to simplify the development and management of applications on the Hedera Hashgraph network. It includes various scripts, libraries, and utilities to help developers interact with the Hedera API.
+To run the project, follow these steps:
 
-## Installation
+1. Ensure you have Node.js installed on your machine. You can download it from [Node.js official website](https://nodejs.org/).
 
-To install the necessary dependencies, run the following command:
+2. Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/davgracia/hedera-api.git
+cd hedera-api
+```
+
+3. Install the necessary dependencies:
 
 ```bash
 npm install
 ```
+
+4. Create a `.env` file in the root directory of the project and add the required environment variables. Refer to the `.env.example` file for the necessary variables.
+
+5. Start the server:
+
+```bash
+# Start with Node in production mode
+npm start
+```
+
+```bash
+# Start with nodemon in development mode
+npm run dev
+```
+
+The server will start running on `http://localhost:3000` by default. You can now use the API endpoints as described in the documentation.
+
+Make sure to configure the port and other settings in the `.env` file if you need to customize the server port configuration.
 
 ## API Endpoints
 
@@ -244,4 +271,11 @@ curl -X DELETE http://localhost:3000/api/token/0.0.1234/delete \
 
 ## License
 
-This project is licensed under the GPL-3.0-or-later License. See the [LICENSE](https://www.gnu.org/licenses/gpl-3.0.txt) file for details.
+This project is licensed under the GNU General Public License v3.0 or later (GPL-3.0-or-later). This license allows you to:
+
+- Use, study, and modify the software.
+- Distribute copies of the original software.
+- Distribute copies of your modified versions.
+
+However, any distributed copies or modifications must also be licensed under the GPL-3.0-or-later. For more details, see the [full license text](https://www.gnu.org/licenses/gpl-3.0.txt).
+

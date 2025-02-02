@@ -1,5 +1,5 @@
 {
-  "name": "hedera-tools",
+  "name": "hedera-api",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,9 +7,10 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "author": "David Martínez Gracia",
+  "author": "davgracia",
+  "email": "martinezgraciadavid@icloud.com",
   "license": "GPL-3.0-or-later",
-  "description": "A set of tools for interacting with the Hedera Hashgraph network.",
+  "description": "An API for interacting with the Hedera Hashgraph network, providing tools for account management, transaction processing, and querying the state of the network.",
   "keywords": [
     "hedera",
     "hashgraph",
