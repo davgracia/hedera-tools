@@ -1,4 +1,4 @@
-# Hedera Tools
+# Hedera API
 
 Welcome to the Hedera API repository. This project allows you to set up your own API server to interact with the Hedera network using the official Hedera SDK.
 
@@ -10,11 +10,16 @@ David G.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Installation](#installation)
+- [Hedera API](#hedera-api)
+- [Author](#author)
+- [Table of Contents](#table-of-contents)
+- [Running the Project](#running-the-project)
 - [API Endpoints](#api-endpoints)
 - [Usage](#usage)
     - [Hedera Networks](#hedera-networks)
+        - [Mainnet](#mainnet)
+        - [Testnet](#testnet)
+        - [Previewnet](#previewnet)
     - [Create Account](#create-account)
     - [Update Account](#update-account)
     - [Create Token](#create-token)
@@ -26,6 +31,18 @@ David G.
     - [Update Token](#update-token)
     - [Delete Token](#delete-token)
 - [License](#license)
+
+## Packages
+
+The following table lists the main packages used in this project:
+
+| Package       | Version | Description                                      |
+|---------------|---------|--------------------------------------------------|
+| `@hashgraph/sdk` | ^2.0.0 | Official Hedera SDK for JavaScript/TypeScript   |
+| `dotenv`      | ^10.0.0 | Loads environment variables from a `.env` file   |
+| `express`     | ^4.17.1 | Web framework for Node.js                        |
+| `nodemon`     | ^2.0.7  | Tool for automatically restarting the server     |
+| `axios`       | ^0.21.1 | Promise-based HTTP client for the browser and Node.js |
 
 ## Running the Project
 
