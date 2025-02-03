@@ -2,6 +2,13 @@
 
 Welcome to the Hedera API repository. This project allows you to set up your own API server to interact with the Hedera network using the official Hedera SDK.
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+![Version](https://img.shields.io/badge/version-0.0.2-green)
+![GitHub last commit](https://img.shields.io/github/last-commit/davgracia/hedera-api)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
+[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/davgracia)
+
 ## Author
 
 David G.
@@ -15,16 +22,17 @@ We welcome contributions! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file
 ## Table of Contents
 
 - [Hedera API](#hedera-api)
-- [Author](#author)
-- [Packages](#packages)
-- [Table of Contents](#table-of-contents)
-- [Running the Project](#running-the-project)
-- [API Endpoints](#api-endpoints)
-- [Usage](#usage)
+  - [Author](#author)
+  - [Contributing](#contributing)
+  - [Table of Contents](#table-of-contents)
+  - [Packages](#packages)
+  - [Running the Project](#running-the-project)
+  - [API Endpoints](#api-endpoints)
+  - [Usage](#usage)
     - [Hedera Networks](#hedera-networks)
-        - [Mainnet](#mainnet)
-        - [Testnet](#testnet)
-        - [Previewnet](#previewnet)
+      - [Mainnet](#mainnet)
+      - [Testnet](#testnet)
+      - [Previewnet](#previewnet)
     - [Create Account](#create-account)
     - [Update Account](#update-account)
     - [Create Token](#create-token)
@@ -35,7 +43,7 @@ We welcome contributions! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file
     - [Dissociate Token](#dissociate-token)
     - [Update Token](#update-token)
     - [Delete Token](#delete-token)
-- [License](#license)
+  - [License](#license)
 
 ## Packages
 
@@ -94,16 +102,16 @@ The following table lists the available API endpoints for the Hedera Tools proje
 
 | Endpoint                | Method | Description          | Parameters                                                                 |
 |-------------------------|--------|----------------------|----------------------------------------------------------------------------|
-| `/api/account`          | POST   | Create Account       | `network`, `accountId`, `userPrivateKey`, `initialBalance`                 |
-| `/api/account/:id/update` | PUT    | Update Account       | `network`, `id`, `userPrivateKey`, `newKey`, `autoRenewPeriod`, `expirationTime`, `memo` |
-| `/api/token`            | POST   | Create Token         | `network`, `accountId`, `userPrivateKey`, `tokenName`, `tokenSymbol`, `initialSupply`, `decimals`, `maxSupply`, `freezeDefault`, `adminKey`, `kycKey`, `freezeKey`, `wipeKey`, `supplyKey`, `feeScheduleKey`, `pauseKey`, `autoRenewAccount`, `autoRenewPeriod`, `expirationTime`, `memo`, `tokenType` |
-| `/api/token/:id/mint`   | POST   | Mint Token           | `network`, `accountId`, `userPrivateKey`, `amount`, `metadata`, `supplyKey` |
-| `/api/token/:id/burn`   | POST   | Burn Token           | `network`, `accountId`, `userPrivateKey`, `amount`, `metadata`, `supplyKey` |
-| `/api/token/:id/transfer` | POST   | Transfer Token       | `network`, `accountId`, `userPrivateKey`, `amount`, `toAccountId`, `metadata` |
-| `/api/token/:id/associate` | POST   | Associate Token      | `network`, `accountId`, `userPrivateKey`, `accountIdToAssociate`, `associateKey` |
-| `/api/token/:id/dissociate` | POST   | Dissociate Token    | `network`, `accountId`, `userPrivateKey`, `accountIdToDissociate`, `dissociateKey` |
-| `/api/token/:id/update` | PUT    | Update Token         | `network`, `accountId`, `userPrivateKey`, `tokenName`, `tokenSymbol`, `adminKey`, `kycKey`, `freezeKey`, `wipeKey`, `supplyKey`, `feeScheduleKey`, `pauseKey`, `autoRenewAccount`, `autoRenewPeriod`, `expirationTime`, `memo` |
-| `/api/token/:id/delete` | DELETE | Delete Token         | `network`, `accountId`, `userPrivateKey`, `adminKey` |
+| `/api/v1/accounts`          | POST   | Create Account       | `network`, `accountId`, `userPrivateKey`, `initialBalance`                 |
+| `/api/v1/accounts/:id/update` | PUT    | Update Account       | `network`, `id`, `userPrivateKey`, `newKey`, `autoRenewPeriod`, `expirationTime`, `memo` |
+| `/api/v1/tokens`            | POST   | Create Token         | `network`, `accountId`, `userPrivateKey`, `tokenName`, `tokenSymbol`, `initialSupply`, `decimals`, `maxSupply`, `freezeDefault`, `adminKey`, `kycKey`, `freezeKey`, `wipeKey`, `supplyKey`, `feeScheduleKey`, `pauseKey`, `autoRenewAccount`, `autoRenewPeriod`, `expirationTime`, `memo`, `tokenType` |
+| `/api/v1/tokens/:id/mint`   | POST   | Mint Token           | `network`, `accountId`, `userPrivateKey`, `amount`, `metadata`, `supplyKey` |
+| `/api/v1/tokens/:id/burn`   | POST   | Burn Token           | `network`, `accountId`, `userPrivateKey`, `amount`, `metadata`, `supplyKey` |
+| `/api/v1/tokens/:id/transfer` | POST   | Transfer Token       | `network`, `accountId`, `userPrivateKey`, `amount`, `toAccountId`, `metadata` |
+| `/api/v1/tokens/:id/associate` | POST   | Associate Token      | `network`, `accountId`, `userPrivateKey`, `accountIdToAssociate`, `associateKey` |
+| `/api/v1/tokens/:id/dissociate` | POST   | Dissociate Token    | `network`, `accountId`, `userPrivateKey`, `accountIdToDissociate`, `dissociateKey` |
+| `/api/v1/tokens/:id/update` | PUT    | Update Token         | `network`, `accountId`, `userPrivateKey`, `tokenName`, `tokenSymbol`, `adminKey`, `kycKey`, `freezeKey`, `wipeKey`, `supplyKey`, `feeScheduleKey`, `pauseKey`, `autoRenewAccount`, `autoRenewPeriod`, `expirationTime`, `memo` |
+| `/api/v1/tokens/:id/delete` | DELETE | Delete Token         | `network`, `accountId`, `userPrivateKey`, `adminKey` |
 
 ## Usage
 
@@ -127,7 +135,7 @@ Each network serves a specific purpose, allowing developers to choose the approp
 ### Create Account
 
 ```bash
-curl -X POST http://localhost:3000/api/account \
+curl -X POST http://localhost:3000/api/v1/accounts \
 -H "Content-Type: application/json" \
 -d '{
     "network": "testnet",
@@ -140,7 +148,7 @@ curl -X POST http://localhost:3000/api/account \
 ### Update Account
 
 ```bash
-curl -X PUT http://localhost:3000/api/account/0.0.1234/update \
+curl -X PUT http://localhost:3000/api/v1/accounts/0.0.1234/update \
 -H "Content-Type: application/json" \
 -d '{
     "network": "testnet",
@@ -155,7 +163,7 @@ curl -X PUT http://localhost:3000/api/account/0.0.1234/update \
 ### Create Token
 
 ```bash
-curl -X POST http://localhost:3000/api/token \
+curl -X POST http://localhost:3000/api/v1/tokens \
 -H "Content-Type: application/json" \
 -d '{
     "network": "testnet",
@@ -185,7 +193,7 @@ curl -X POST http://localhost:3000/api/token \
 ### Mint Token
 
 ```bash
-curl -X POST http://localhost:3000/api/token/0.0.1234/mint \
+curl -X POST http://localhost:3000/api/v1/tokens/0.0.1234/mint \
 -H "Content-Type: application/json" \
 -d '{
     "network": "testnet",
@@ -200,7 +208,7 @@ curl -X POST http://localhost:3000/api/token/0.0.1234/mint \
 ### Burn Token
 
 ```bash
-curl -X POST http://localhost:3000/api/token/0.0.1234/burn \
+curl -X POST http://localhost:3000/api/v1/tokens/0.0.1234/burn \
 -H "Content-Type: application/json" \
 -d '{
     "network": "testnet",
@@ -215,7 +223,7 @@ curl -X POST http://localhost:3000/api/token/0.0.1234/burn \
 ### Transfer Token
 
 ```bash
-curl -X POST http://localhost:3000/api/token/0.0.1234/transfer \
+curl -X POST http://localhost:3000/api/v1/tokens/0.0.1234/transfer \
 -H "Content-Type: application/json" \
 -d '{
     "network": "testnet",
@@ -230,7 +238,7 @@ curl -X POST http://localhost:3000/api/token/0.0.1234/transfer \
 ### Associate Token
 
 ```bash
-curl -X POST http://localhost:3000/api/token/0.0.1234/associate \
+curl -X POST http://localhost:3000/api/v1/tokens/0.0.1234/associate \
 -H "Content-Type: application/json" \
 -d '{
     "network": "testnet",
@@ -244,7 +252,7 @@ curl -X POST http://localhost:3000/api/token/0.0.1234/associate \
 ### Dissociate Token
 
 ```bash
-curl -X POST http://localhost:3000/api/token/0.0.1234/dissociate \
+curl -X POST http://localhost:3000/api/v1/tokens/0.0.1234/dissociate \
 -H "Content-Type: application/json" \
 -d '{
     "network": "testnet",
@@ -258,7 +266,7 @@ curl -X POST http://localhost:3000/api/token/0.0.1234/dissociate \
 ### Update Token
 
 ```bash
-curl -X PUT http://localhost:3000/api/token/0.0.1234/update \
+curl -X PUT http://localhost:3000/api/v1/tokens/0.0.1234/update \
 -H "Content-Type: application/json" \
 -d '{
     "network": "testnet",
@@ -283,7 +291,7 @@ curl -X PUT http://localhost:3000/api/token/0.0.1234/update \
 ### Delete Token
 
 ```bash
-curl -X DELETE http://localhost:3000/api/token/0.0.1234/delete \
+curl -X DELETE http://localhost:3000/api/v1/tokens/0.0.1234/delete \
 -H "Content-Type: application/json" \
 -d '{
     "network": "testnet",

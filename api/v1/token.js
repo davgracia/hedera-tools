@@ -18,7 +18,7 @@ app.use(express.json());
 const { sendError } = require('../../utils/error');
 
 /**
- * @api {post} /api/token Create Token
+ * @api {post} /api/v1/tokens Create Token
  * @apiName CreateToken
  * @apiGroup Token
  * @apiVersion 1.0.0
