@@ -1,4 +1,4 @@
-# Contributing to Hedera Agent Kit
+# Contributing to Hedera API
 
 We are thrilled that you’re interested in contributing to the **Hedera API**! Whether it’s a simple doc fix or a major feature, we appreciate your help.
 
