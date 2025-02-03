@@ -11,7 +11,7 @@ app.use(express.json());
 const { sendError } = require('../../utils/error'); // Adjust the path as necessary
 
 /**
- * @api {post} /api/account Create Account
+ * @api {post} /api/v1/accounts Create Account
  * @apiName CreateAccount
  * @apiGroup Account
  * @apiVersion 1.0.0
@@ -59,7 +59,7 @@ app.post('', async (req, res) => {
 });
 
 /**
- * @api {put} /api/account/:id/update Update Account
+ * @api {put} /api/v1/accounts/:id/update Update Account
  * @apiName UpdateAccount
  * @apiGroup Account
  * @apiVersion 1.0.0
