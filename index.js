@@ -1,5 +1,4 @@
 const express = require('express');
-const api = require('./api/index.js');
 const session = require('express-session');
 const useragent = require('express-useragent');
 
@@ -29,8 +28,11 @@ app.get('/', (req, res) => {
     res.send('Hello World! This is the Hedera API project.');
 });
 
-// Use the API routes in the app
-app.use('/api', api);
+// Import the API V1 routes
+const apiV1 = require('./api/v1/index.js');
+
+// Use the API V1 routes in the app
+app.use('/api/v1', apiV1);
 
 // Define the port to run the server on
 const port = process.env.PORT || 3000;

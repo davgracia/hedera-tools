@@ -8,7 +8,7 @@ const express = require('express');
 const app = express.Router();
 app.use(express.json());
 
-const { sendError } = require('../utils/error'); // Adjust the path as necessary
+const { sendError } = require('../../utils/error'); // Adjust the path as necessary
 
 /**
  * @api {post} /api/account Create Account

@@ -15,7 +15,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-const { sendError } = require('../utils/error');
+const { sendError } = require('../../utils/error');
 
 /**
  * @api {post} /api/token Create Token
