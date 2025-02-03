@@ -8,7 +8,7 @@
     "dev": "nodemon index.js"
   },
   "author": "davgracia",
-  "email": "martinezgraciadavid@icloud.com",
+  "email": "contact@davgracia.dev",
   "license": "GPL-3.0-or-later",
   "description": "An API for interacting with the Hedera Hashgraph network, providing tools for account management, transaction processing, and querying the state of the network.",
   "keywords": [

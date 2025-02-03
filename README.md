@@ -7,13 +7,14 @@ Welcome to the Hedera API repository. This project allows you to set up your own
 ![GitHub last commit](https://img.shields.io/github/last-commit/davgracia/hedera-api)
 [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.txt)
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/davgracia)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:contact@davgracia.dev)
 
 ## Author
 
 David G.
 [davgracia](https://github.com/davgracia)
 [LinkedIn](https://www.linkedin.com/in/davgracia/)
+[E-mail](mailto:contact@davgracia.dev)
 
 ## Contributing
 
