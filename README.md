@@ -1,6 +1,6 @@
 # Hedera API
 
-Welcome to the Hedera API repository. This project allows you to set up your own API server to interact with the Hedera network using the official Hedera SDK.
+Welcome to the Hedera API repository. This project allows you to set up your own API server to interact with the Hedera network using the official Hedera SDK. Please note that this is not the official Hedera API.
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 ![Version](https://img.shields.io/badge/version-0.0.2-green)
@@ -27,7 +27,7 @@ We welcome contributions! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file
   - [Table of Contents](#table-of-contents)
   - [Packages](#packages)
   - [Running the Project](#running-the-project)
-  - [API Endpoints](#api-endpoints)
+  - [API Endpoints (v1)](#api-endpoints-(v1))
   - [Usage](#usage)
     - [Hedera Networks](#hedera-networks)
       - [Mainnet](#mainnet)
@@ -96,7 +96,7 @@ The server will start running on `http://localhost:3000` by default. You can now
 
 Make sure to configure the port and other settings in the `.env` file if you need to customize the server port configuration.
 
-## API Endpoints
+## API Endpoints (v1)
 
 The following table lists the available API endpoints for the Hedera Tools project:
 
